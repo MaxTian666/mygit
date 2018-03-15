@@ -1,0 +1,29 @@
+1.注册github账号
+2.登录账号创建一个工程
+3.下载git bash;安装
+4.$ ssh -keygen -t rsa -C "your_email@youremail.com"   //"填写自己的github账号"
+5.此时会得到在管理员目录下得到一个.ssh文件夹，打开此文件夹；打开id_rsa并复制
+6.现在你就需要登录到你的GitHub上边添加这个密匙，打开你GitHub的设置界面，找到SSH and GPG keys这个选项之后，在网页右上角有一个添加新的SSH keys 点击；
+  这里的title 是让你给你的密匙起一个名字，根据个人喜好，什么名字都可以，然后把你在刚刚文件中复制的密匙，填写在下边的大框里。保存即可。
+7.之后你就可以回到你的Git bash
+ssh -T git@github.com
+git config --global user.name "MaxTian666"
+git config --global user.email "409855255@qq.com"
+
+8.下面就要将你的库克隆下来到本地电脑中，方便以后进行上传代码。在库创建完成之后 会有一个网址出现在网页中。
+个人习惯将自己的文件储存在d盘之中，所以你先需要将git bash定位在d盘中
+cd /D
+git clone 网址
+
+在得到的文件夹中创建任何文件
+
+cd /D/"克隆的文件夹"
+
+git add "创建的文件"
+
+git commit -m "CC"   //cc代表注释
+
+git push origin master
+
+登录账号
+
